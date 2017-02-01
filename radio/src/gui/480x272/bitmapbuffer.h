@@ -70,6 +70,11 @@ class BitmapBufferBase
       return data;
     }
 
+    uint32_t getDataSize() const
+    {
+      return width * height * sizeof(T);
+    }
+
   protected:
     uint8_t format;
     uint16_t width;
